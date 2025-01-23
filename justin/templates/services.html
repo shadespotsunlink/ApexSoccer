@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ academy_name }} - Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">APEX FOOTY ACADEMY</div>
+        <button class="menu-toggle">☰</button>
+        <ul class="nav-links">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('services') }}">Services</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('index') }}#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="page-hero services-hero">
+        <h1>Training Programs</h1>
+        <p class="tagline">Personalized coaching solutions to elevate your game</p>
+    </header>
+
+    <div class="page-content">
+        <!-- Programs Overview -->
+        <section class="services-section programs-section">
+            <div class="container">
+                <h2 class="section-title">Our Training Programs</h2>
+                <p class="section-subtitle">Choose the program that best fits your goals and schedule</p>
+
+                <div class="programs-grid">
+                    <!-- Individual Training -->
+                    <div class="program-card">
+                        <div class="program-header">
+                            <span class="program-icon">👤</span>
+                            <h3>1-on-1 Training</h3>
+                            <p class="program-price">From $85/session</p>
+                        </div>
+                        <div class="program-content">
+                            <p class="program-description">Personalized coaching sessions tailored to your specific needs and goals.</p>
+                            <ul class="program-features">
+                                <li>Individual skill assessment</li>
+                                <li>Customized training plan</li>
+                                <li>Video analysis</li>
+                                <li>Progress tracking</li>
+                                <li>Flexible scheduling</li>
+                            </ul>
+                            <div class="program-footer">
+                                <span class="duration">60-90 minutes</span>
+                                <a href="{{ url_for('index') }}#contact" class="cta-button">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Small Group Training -->
+                    <div class="program-card featured">
+                        <div class="program-header">
+                            <span class="program-icon">👥</span>
+                            <h3>Small Group Training</h3>
+                            <p class="program-price">From $45/session</p>
+                        </div>
+                        <div class="program-content">
+                            <p class="program-description">Train with 3-6 players of similar skill level in a competitive environment.</p>
+                            <ul class="program-features">
+                                <li>Position-specific drills</li>
+                                <li>Game-like scenarios</li>
+                                <li>Team tactics</li>
+                                <li>Competitive matches</li>
+                                <li>Weekly sessions</li>
+                            </ul>
+                            <div class="program-footer">
+                                <span class="duration">90 minutes</span>
+                                <a href="{{ url_for('index') }}#contact" class="cta-button">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Training -->
+                    <div class="program-card">
+                        <div class="program-header">
+                            <span class="program-icon">⚽</span>
+                            <h3>Team Training</h3>
+                            <p class="program-price">Custom pricing</p>
+                        </div>
+                        <div class="program-content">
+                            <p class="program-description">Comprehensive training programs for entire teams or clubs.</p>
+                            <ul class="program-features">
+                                <li>Team tactics & strategy</li>
+                                <li>Group dynamics</li>
+                                <li>Season preparation</li>
+                                <li>Performance analysis</li>
+                                <li>Custom schedule</li>
+                            </ul>
+                            <div class="program-footer">
+                                <span class="duration">2 hours</span>
+                                <a href="{{ url_for('index') }}#contact" class="cta-button">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specialized Training -->
+        <section class="services-section specialized-section">
+            <div class="container">
+                <h2 class="section-title">Specialized Training</h2>
+                <p class="section-subtitle">Focus on specific aspects of your game</p>
+
+                <div class="specialized-grid">
+                    <div class="specialized-card">
+                        <div class="specialized-icon">🥅</div>
+                        <h3>Goalkeeper Training</h3>
+                        <p>Specialized training for goalkeepers focusing on positioning, reflexes, and distribution.</p>
+                    </div>
+                    <div class="specialized-card">
+                        <div class="specialized-icon">🏃</div>
+                        <h3>Speed & Agility</h3>
+                        <p>Enhance your physical performance with focused speed and agility training.</p>
+                    </div>
+                    <div class="specialized-card">
+                        <div class="specialized-icon">🧠</div>
+                        <h3>Mental Training</h3>
+                        <p>Develop mental toughness, focus, and game awareness.</p>
+                    </div>
+                    <div class="specialized-card">
+                        <div class="specialized-icon">📊</div>
+                        <h3>Performance Analysis</h3>
+                        <p>Video analysis and performance metrics to track your progress.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Training Process -->
+        <section class="services-section process-section">
+            <div class="container">
+                <h2 class="section-title">Our Training Process</h2>
+                <p class="section-subtitle">A systematic approach to player development</p>
+
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h3>Assessment</h3>
+                        <p>Initial evaluation of skills, fitness level, and goals</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h3>Planning</h3>
+                        <p>Custom training program design based on assessment</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h3>Training</h3>
+                        <p>Structured sessions with continuous feedback</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h3>Progress</h3>
+                        <p>Regular progress tracking and program adjustments</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Training Services Section -->
+        <section class="services-section detailed-services-section">
+            <div class="container">
+                <h2 class="section-title">More About Our Training Services</h2>
+                <p class="section-subtitle">Discover the benefits and features of our training programs</p>
+
+                <div class="training-details">
+                    <h3 class="training-title">Comprehensive Training Approach</h3>
+                    <p class="training-description">At APEX FOOTY ACADEMY, we believe in a holistic approach to player development. Our training programs are designed to cater to players of all skill levels, focusing on individual growth and team dynamics. Our experienced coaches utilize proven methodologies that combine technical skills, tactical understanding, and physical conditioning to enhance overall performance. Join us to elevate your game and reach your full potential!</p>
+
+                    <h3>Training Programs</h3>
+                    <div class="program-details">
+                        <div class="program-card">
+                            <h4>1-on-1 Training</h4>
+                            <p class="program-description">Experience personalized coaching sessions tailored to your specific needs and goals. This program is ideal for players looking to focus on individual skills and receive direct feedback from our expert coaches.</p>
+                            <ul class="program-features">
+                                <li>Individual skill assessment to identify strengths and areas for improvement.</li>
+                                <li>Customized training plan designed to meet your specific objectives.</li>
+                                <li>Video analysis to review performance and track progress over time.</li>
+                                <li>Regular progress tracking to ensure continuous improvement.</li>
+                                <li>Flexible scheduling to accommodate your availability.</li>
+                            </ul>
+                            <p class="marketing-message">Unlock your potential with focused training that adapts to your unique style and pace. Our coaches are dedicated to helping you achieve your personal best!</p>
+                            <div class="program-footer">
+                                <span class="duration">60-90 minutes</span>
+                                <a href="{{ url_for('index') }}#contact" class="cta-button">Book Now</a>
+                            </div>
+                        </div>
+
+                        <div class="program-card">
+                            <h4>Small Group Training</h4>
+                            <p class="program-description">Train with 3-6 players of similar skill level in a competitive environment. This program fosters teamwork and camaraderie while allowing players to develop their skills in a supportive setting.</p>
+                            <ul class="program-features">
+                                <li>Position-specific drills that cater to the unique needs of each player.</li>
+                                <li>Game-like scenarios to simulate real match conditions and improve decision-making.</li>
+                                <li>Team tactics to enhance understanding of group dynamics and strategies.</li>
+                                <li>Competitive matches to apply skills in a fun and engaging way.</li>
+                                <li>Weekly sessions to ensure consistent practice and development.</li>
+                            </ul>
+                            <p class="marketing-message">Join a community of passionate players and elevate your game together! Our small group training sessions are designed to build skills and foster friendships.</p>
+                            <div class="program-footer">
+                                <span class="duration">90 minutes</span>
+                                <a href="{{ url_for('index') }}#contact" class="cta-button">Book Now</a>
+                            </div>
+                        </div>
+
+                        <div class="program-card">
+                            <h4>Team Training</h4>
+                            <p class="program-description">Comprehensive training programs for entire teams or clubs. This program focuses on building team cohesion and enhancing overall performance through tailored training sessions.</p>
+                            <ul class="program-features">
+                                <li>Team tactics & strategy to develop a cohesive playing style.</li>
+                                <li>Group dynamics training to improve communication and teamwork.</li>
+                                <li>Season preparation to ensure teams are ready for competitive play.</li>
+                                <li>Performance analysis to identify areas for team improvement.</li>
+                                <li>Custom schedule to fit the needs of your team.</li>
+                            </ul>
+                            <p class="marketing-message">Transform your team into a well-oiled machine! Our team training sessions are designed to enhance collaboration and elevate performance on the field.</p>
+                            <div class="program-footer">
+                                <span class="duration">2 hours</span>
+                                <a href="{{ url_for('index') }}#contact" class="cta-button">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="services-section cta-section">
+            <div class="container">
+                <h2>Ready to Start?</h2>
+                <p>Book your first session today and begin your journey to excellence</p>
+                <a href="{{ url_for('index') }}#contact" class="cta-button">Get Started</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 APEX FOOTY ACADEMY. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html> 

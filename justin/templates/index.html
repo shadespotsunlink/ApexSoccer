@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ academy_name }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">APEX FOOTY ACADEMY</div>
+        <button class="menu-toggle">☰</button>
+        <ul class="nav-links">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('services') }}">Services</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <h1>Transform Your Game</h1>
+        <p>Professional 1-on-1 and small group soccer and performance coaching</p>
+        <a href="#contact" class="cta-button">Book a Session</a>
+    </header>
+
+    <section id="services" class="services">
+        <h2 class="section-title">Training Programs</h2>
+        <p class="section-subtitle">Choose the program that best fits your goals</p>
+        <div class="service-grid">
+            <div class="service-card">
+                <div class="service-icon">🎯</div>
+                <h3>1-on-1 Training</h3>
+                <p>Personalized coaching sessions tailored to your specific needs</p>
+                <ul>
+                    <li>Skill development</li>
+                    <li>Position-specific training</li>
+                    <li>Fitness conditioning</li>
+                    <li>Video analysis</li>
+                    <li>Progress tracking</li>
+                </ul>
+                <div class="service-footer">
+                    <span class="duration">60-90 min sessions</span>
+                    <button class="book-button" data-service="1on1">Book Now</button>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">👥</div>
+                <h3>Small Group Training</h3>
+                <p>Train with 3-6 players for an engaging group experience</p>
+                <ul>
+                    <li>Team tactics</li>
+                    <li>Competitive drills</li>
+                    <li>Game scenarios</li>
+                    <li>Team chemistry</li>
+                    <li>Match simulation</li>
+                </ul>
+                <div class="service-footer">
+                    <span class="duration">90 min sessions</span>
+                    <button class="book-button" data-service="group">Book Now</button>
+                </div>
+            </div>
+            <div class="service-card featured">
+                <div class="service-icon">🏆</div>
+                <h3>Performance Coaching</h3>
+                <p>Comprehensive mental and physical development program</p>
+                <ul>
+                    <li>Mental conditioning</li>
+                    <li>Goal setting & visualization</li>
+                    <li>Match preparation</li>
+                    <li>Performance analysis</li>
+                    <li>Nutrition guidance</li>
+                </ul>
+                <div class="service-footer">
+                    <span class="duration">Monthly program</span>
+                    <button class="book-button" data-service="performance">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-us">
+        <div class="container">
+            <h2 class="section-title">Why Elite Soccer Coaching Works</h2>
+            <p class="section-subtitle">Our proven approach delivers results</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">📊</div>
+                    <h3>Data-Driven Development</h3>
+                    <p>We use advanced performance metrics and video analysis to track your progress and adjust training accordingly.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎓</div>
+                    <h3>Expert Coaches</h3>
+                    <p>Train with UEFA licensed coaches who have professional playing experience and modern coaching certifications.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Personalized Approach</h3>
+                    <p>Every player receives a customized training program based on their position, skill level, and goals.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🧠</div>
+                    <h3>Complete Development</h3>
+                    <p>We focus on technical, tactical, physical, and mental aspects of the game for well-rounded improvement.</p>
+                </div>
+            </div>
+
+            <div class="success-stats">
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Players Trained</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">90%</span>
+                    <span class="stat-label">Success Rate</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">Take the first step towards improving your game</p>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">📱</div>
+                        <h3>Contact Details</h3>
+                        <ul>
+                            <li><strong>Phone:</strong> (555) 123-4567</li>
+                            <li><strong>Email:</strong> info@elitesoccercoaching.com</li>
+                            <li><strong>Location:</strong> Seattle, WA</li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">⏰</div>
+                        <h3>Training Hours</h3>
+                        <ul>
+                            <li><strong>Monday-Friday:</strong> 7:00 AM - 8:00 PM</li>
+                            <li><strong>Saturday:</strong> 8:00 AM - 5:00 PM</li>
+                            <li><strong>Sunday:</strong> 9:00 AM - 3:00 PM</li>
+                        </ul>
+                    </div>
+
+                    <div class="social-links">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="https://instagram.com/elitesoccercoaching" target="_blank" class="social-icon" aria-label="Follow us on Instagram">
+                                <img src="{{ url_for('static', filename='images/instagram.svg') }}" alt="Instagram">
+                            </a>
+                            <a href="https://facebook.com/elitesoccercoaching" target="_blank" class="social-icon" aria-label="Follow us on Facebook">
+                                <img src="{{ url_for('static', filename='images/facebook.svg') }}" alt="Facebook">
+                            </a>
+                            <a href="https://twitter.com/elitesoccer" target="_blank" class="social-icon" aria-label="Follow us on Twitter">
+                                <img src="{{ url_for('static', filename='images/twitter.svg') }}" alt="Twitter">
+                            </a>
+                            <a href="https://youtube.com/elitesoccercoaching" target="_blank" class="social-icon" aria-label="Subscribe to our YouTube channel">
+                                <img src="{{ url_for('static', filename='images/youtube.svg') }}" alt="YouTube">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form id="booking-form" class="enhanced-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="service">Service Interest</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Select a Service</option>
+                                    <option value="1on1">1-on-1 Training</option>
+                                    <option value="group">Small Group Training</option>
+                                    <option value="performance">Performance Coaching</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="experience">Experience Level</label>
+                                <select id="experience" name="experience" required>
+                                    <option value="">Select Level</option>
+                                    <option value="beginner">Beginner</option>
+                                    <option value="intermediate">Intermediate</option>
+                                    <option value="advanced">Advanced</option>
+                                    <option value="professional">Professional</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Additional Information</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your goals, preferred training times, or any specific requirements"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" checked>
+                                Subscribe to our newsletter for training tips and updates
+                            </label>
+                        </div>
+
+                        <button type="submit" class="submit-button">
+                            <span>Submit Inquiry</span>
+                            <div class="button-icon">→</div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Elite Soccer Coaching. All rights reserved.</p>
+    </footer>
+
+    <script src="static/js/main.js"></script>
+</body>
+</html> 

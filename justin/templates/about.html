@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About {{ academy_name }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Elite Soccer Coaching</div>
+        <button class="menu-toggle">☰</button>
+        <ul class="nav-links">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('services') }}">Services</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('index') }}#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-hero about-hero">
+        <h1>About {{ academy_name }}</h1>
+        <p class="tagline">Dedicated to developing champions both on and off the field</p>
+    </header>
+
+    <div class="page-content">
+        <!-- Vision & Mission Section -->
+        <section class="about-section vision-section">
+            <div class="container">
+                <h2 class="section-title">Our Foundation</h2>
+                <p class="section-subtitle">Built on strong principles and a commitment to excellence in soccer development</p>
+                
+                <div class="vision-content">
+                    <div class="vision-card">
+                        <h2>Our Vision</h2>
+                        <p>To be the world's leading soccer development program, transforming passionate players into exceptional athletes through innovative training and personalized coaching.</p>
+                        <p>Inspire a global community of soccer enthusiasts who strive for excellence and sportsmanship.</p>
+                    </div>
+                    <div class="vision-card">
+                        <h2>Our Mission</h2>
+                        <p>Providing world-class soccer training that develops not just skilled players, but confident individuals ready to succeed both on and off the field.</p>
+                        <p>Empowering athletes with the tools and mindset needed to achieve their highest potential in every aspect of life.</p>
+                    </div>
+                    <div class="vision-card">
+                        <h2>Our Values</h2>
+                        <p>Commitment to integrity, respect, and teamwork in every aspect of our training and interactions.</p>
+                        <p>Fostering a culture of continuous improvement and lifelong learning for both players and coaches.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coaches Section -->
+        <section class="about-section coaches-section">
+            <div class="container">
+                <h2 class="section-title">Meet Our Expert Coaches</h2>
+                <p class="section-subtitle">Learn from the best in the game</p>
+                
+                <div class="coaches-grid">
+                    <div class="coach-card">
+                        <div class="coach-image">
+                            <img src="{{ url_for('static', filename='images/coach-john.jpg') }}" alt="Coach John Smith">
+                        </div>
+                        <div class="coach-info">
+                            <h3>John Smith</h3>
+                            <span class="coach-title">Head Coach & Technical Director</span>
+                            <div class="coach-credentials">
+                                <span class="credential">UEFA A License</span>
+                                <span class="credential">15+ Years Pro Experience</span>
+                                <span class="credential">Former National Team Player</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coach-card">
+                        <div class="coach-image">
+                            <img src="{{ url_for('static', filename='images/coach-sarah.jpg') }}" alt="Coach Sarah Johnson">
+                        </div>
+                        <div class="coach-info">
+                            <h3>Sarah Johnson</h3>
+                            <span class="coach-title">Performance Coach</span>
+                            <div class="coach-credentials">
+                                <span class="credential">Sports Psychology Degree</span>
+                                <span class="credential">Certified S&C Specialist</span>
+                                <span class="credential">D1 College Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Timeline Section -->
+        <section class="about-section story-section">
+            <div class="container">
+                <h2 class="section-title">Our Journey</h2>
+                <div class="story-content">
+                    <div class="story-intro-block">
+                        <p class="story-intro">Founded by professional players and UEFA-certified coaches, Elite Soccer Coaching has grown from a passion project into a leading force in soccer development.</p>
+                    </div>
+
+                    <div class="story-blocks">
+                        <div class="story-block">
+                            <div class="story-image">
+                                <img src="{{ url_for('static', filename='images/beginnings.jpg') }}" alt="Training session">
+                            </div>
+                            <div class="story-text">
+                                <h3>Where It All Began</h3>
+                                <p>Starting with personalized one-on-one training sessions, we brought professional experience directly to individual player development. Our focus on tailored coaching quickly gained recognition among aspiring players.</p>
+                            </div>
+                        </div>
+
+                        <div class="story-block reverse">
+                            <div class="story-image">
+                                <img src="{{ url_for('static', filename='images/innovation.jpg') }}" alt="Performance analysis">
+                            </div>
+                            <div class="story-text">
+                                <h3>Innovation in Training</h3>
+                                <p>We revolutionized local soccer training by introducing advanced performance analysis and mental conditioning programs. This holistic approach set new standards in player development.</p>
+                            </div>
+                        </div>
+
+                        <div class="story-block">
+                            <div class="story-image">
+                                <img src="{{ url_for('static', filename='images/growth.jpg') }}" alt="Group training">
+                            </div>
+                            <div class="story-text">
+                                <h3>Growing Together</h3>
+                                <p>As our community grew, we expanded into small group training, creating dynamic environments that foster both individual skill development and team chemistry.</p>
+                            </div>
+                        </div>
+
+                        <div class="story-block reverse">
+                            <div class="story-image">
+                                <img src="{{ url_for('static', filename='images/today.jpg') }}" alt="Modern facility">
+                            </div>
+                            <div class="story-text">
+                                <h3>Elite Soccer Today</h3>
+                                <p>Now a premier soccer development program, we've helped hundreds of players achieve their goals, from college scholarships to professional contracts. Our commitment to excellence continues to shape the future of soccer training.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section class="about-section achievements-section">
+            <div class="container">
+                <h2 class="section-title">Our Impact</h2>
+                <div class="achievements-grid">
+                    <div class="achievement-stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Players Trained</span>
+                    </div>
+                    <div class="achievement-stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Pro Contracts</span>
+                    </div>
+                    <div class="achievement-stat">
+                        <span class="stat-number">25+</span>
+                        <span class="stat-label">Countries</span>
+                    </div>
+                    <div class="achievement-stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="about-section cta-section">
+            <div class="container">
+                <h2>Ready to Transform Your Game?</h2>
+                <p>Join the ranks of successful players who have taken their game to the next level</p>
+                <a href="{{ url_for('index') }}#contact" class="cta-button">Start Your Journey Today</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Elite Soccer Coaching. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html> 
